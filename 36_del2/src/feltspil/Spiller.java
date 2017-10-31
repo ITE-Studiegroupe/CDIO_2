@@ -26,5 +26,6 @@ public class Spiller {
 	 public int getNr() {
 		 return spillernr;
 	 }
+	 77fucdsakms,d
 
 }
