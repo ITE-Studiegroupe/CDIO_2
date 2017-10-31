@@ -5,6 +5,7 @@ public class Terning {
 	/*Denne klasse har til formål at lave et terning-kast, der som en terning 
 	en terning i virkeligheden giver en tilfældig værdi mellem 1-6*/
 	private int terning;
+	//hej trunte
 
 	private void Kast() {
 		int terning;
