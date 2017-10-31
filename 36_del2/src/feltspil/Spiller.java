@@ -19,11 +19,11 @@ public class Spiller {
 		 return spillernavn;
 	}
 	 //set nr
-	 public void setNr(int nr_spiller) {
+	 public void setNummer(int nr_spiller) {
 		 spillernr = nr_spiller;
 	 }
 	 //get nr
-	 public int getNr() {
+	 public int getNummer() {
 		 return spillernr;
 	 }
 }
