@@ -1,23 +1,23 @@
 @@ KnapTekst
-1 Start
-2 Kast
-3 Luk
+00 Spil
+01 Kast
+02 Luk
 
 @@ FeltTekst
-1 Ingen ide
-2 til hvad 
-3 der skal
-4 stå her
+00 Du har fundet tårnet i Slagelse, og sælger 1g. kokain for 250. Du er lidt rigere nu!
+01 Du har ødlagt dine sneaks og bliver nød til at købe nye for 100.
+02 Du er kunde nummer 100. Derfor får du 100.
+03 Du har brugt 20 på en is.
+04 Du har vundet 180 i lotto. Tillyke med det du gamle!
+05 Gud tilgiver dig, du behøver ikke at betale.
+06 Du har tabt mobilen. Brug 70 på at fikse skærmen.
+07 Sov i min hytte og du vil blive betalt 60 for din service.
+08 Du er blevet voldtaget og forulempet, du mister 80.
+09 Du fik en plads i pitten. Dette koster 50.
+10 Du har fundet guld i bjergene og sælger det for 650, du er rig!
 
 @@ BeskedTekst
-1 Du har fundet tårnet i Slagelse, og sælger 1g. kokain for 250. Du er lidt rigere nu!
-2 Du har ødlagt dine sneaks og bliver nød til at købe nye for 100.
-3 Du er kunde nummer 100. Derfor får du 100.
-4 Du har brugt 20 på en is.
-5 Du har vundet 180 i lotto. Tillyke med det du gamle!
-6 Gud tilgiver dig, du behøver ikke at betale.
-7 Du har tabt mobilen. Brug 70 på at fikse skærmen.
-8 Sov i min hytte og du vil blive betalt 60 for din service.
-9 Du er blevet voldtaget og forulempet, du mister 80.
-10 Du fik en plads i pitten. Dette koster 50.
-11 Du har fundet guld i bjergene og sælger det for 650, du er rig!
+00 Ingen ide
+01 til hvad 
+02 der skal
+03 stå her
