@@ -12,12 +12,13 @@ public class Konto {
 	}
 	
 	public boolean indsætPenge(int p) {
-		int tjek = balance - p ;
+		int tjek = balance + p ;
 		boolean resultat;
 		if(tjek<0) {
 			resultat = false;
 					}
 		else {
+			this.balance = tjek;
 			resultat = true;
 		}
 	return resultat;

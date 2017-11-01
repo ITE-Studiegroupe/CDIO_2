@@ -13,7 +13,7 @@ public class Terning {
 		this.terning = terning;
 	 }
 	 //get kast
-	 public int getKast() {
+	 public int getVærdi() {
 		 Kast();
 		 return terning;
 
