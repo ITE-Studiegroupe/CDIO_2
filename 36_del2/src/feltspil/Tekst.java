@@ -5,7 +5,10 @@ import java.util.Scanner;
 
 public class Tekst {
 	private static StrengArray sprog = new StrengArray(new String[] {"DA", "EN"});
-	private static StrengArray tekstArray = new StrengArray();
+	private static StrengArray tekstFelter = new StrengArray();
+	private static StrengArray tekstKnapper = new StrengArray();
+	private static StrengArray tekstBeskeder = new StrengArray();
+	private static StrengArray[] tekstArray = new StrengArray[] {tekstKnapper, tekstFelter, tekstBeskeder};
 
 	public static void indlæsSprog(String input) {
 		// TODO Auto-generated method stub
@@ -22,20 +25,29 @@ public class Tekst {
 				break;
 			}
 		}
-		tekstArray = læsTekst(fil);
+		læsTekst(fil);
 	}
 	
-	public static String getTekst(int i) {
-		return tekstArray.getFraIndeks(i);
+	public static String getTekst(int t, int i) {
+		if (t>=tekstArray.length||t<0) return "index out of bounds";
+		return tekstArray[t].getFraIndeks(i);
 	}
 	
-	private static StrengArray læsTekst(File f) {
+	private static void læsTekst(File f) {
 		Scanner sc;
-		StrengArray result = new StrengArray();
+		int i = -1;
 		try {
 			sc = new Scanner(f);
 			while(sc.hasNextLine()) {
-				result.tilføj(sc.nextLine());
+				String st = sc.nextLine();
+				
+				if(st.contains("//")||st.equals("")) continue;
+				else if (st.contains("@@")) {
+					i++;
+					continue;
+				}
+				
+				tekstArray[i].tilføj(st);
 			}
 			sc.close();
 		} catch (FileNotFoundException e) {
@@ -43,7 +55,6 @@ public class Tekst {
 			e.printStackTrace();
 		}
 		
-		return result;
 	}
 	
 }
