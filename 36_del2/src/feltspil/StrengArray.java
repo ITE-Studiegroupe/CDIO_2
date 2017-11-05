@@ -14,7 +14,8 @@ public class StrengArray {
 	}
 	
 	public String getFraIndeks(int i) {
-		if (i > array.length-1||i<0) return "index out of bounds";
+		if (i > array.length-1||i<0) throw new ArrayIndexOutOfBoundsException(
+				"indeks \""+i+"\" er uden for grænserne 0 til "+(array.length-1));;
 		return array[i];
 	}
 	

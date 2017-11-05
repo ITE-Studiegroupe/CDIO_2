@@ -17,7 +17,8 @@
 10 Du har fundet guld i bjergene og sælger det for 650, du er rig!
 
 @@ BeskedTekst
-00 Ingen ide
-01 til hvad 
-02 der skal
-03 stå her
+00 Indtast spiller 1's navn eller "exit" for at lukke:
+01 Indtast spiller 2's navn: 
+02 Du slog 
+03 Det er @_'s tur, skriv "kast" for at kaste.
+04 Du har dermed @_ på kontoen. 
