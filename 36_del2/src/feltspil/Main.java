@@ -1,81 +1,71 @@
 package feltspil;
 
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		Scanner s; 
-		Spiller spiller1 = new Spiller();
-		Spiller spiller2 = new Spiller();
-		Raflebæger raflebæger = new Raflebæger();
-		Felter felt = new Felter();
-
-		s = new Scanner(System.in);
-		String input;
-
-
-		System.out.print("Indtast spiller 1's navn eller \"exit\" for at lukke: ");
-
-		input = s.nextLine();
-		//Checker om "exit" er blevet indtastet, hvis sandt, lukkes programmet.
-		if(input.toLowerCase().contentEquals("exit")) {
-			s.close();
-			System.exit(0);
-			//break;
+		Spiller[] spillere = new Spiller[] {new Spiller(), new Spiller()};
+		Konto[] kontoer = new Konto[] {new Konto(), new Konto()};
+		Raflebæger rafle = new Raflebæger();
+		Felter felter = new Felter();
+		Scanner sc = new Scanner(System.in);
+		int nr = 0;
+		final int MAX = 3000;
+		
+		try {
+			Tekst.indlæsSprog("DA");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		else { spiller1.setNavn(input);
-		spiller1.setNummer(1);
-
-		}
-
-
-		System.out.print("Indtast spiller 2's navn: ");
-		Konto konto1 = new Konto();
-		konto1.setBalance(1000);
-		input = s.nextLine();
-		spiller2.setNavn(input);
-		spiller2.setNummer(2);
-		Konto konto2 = new Konto();
-		konto2.setBalance(1000);
-
-		while (true) {
-			s = new Scanner(System.in);
-			String input2;
-
-			System.out.print("Det er " + spiller1.getNavn()+ " skriv kast");
-
-			input2 = s.nextLine();
-			//Checker om "exit" er blevet indtastet, hvis sandt, lukkes programmet.
-			if(input2.toLowerCase().contentEquals("kast")) {
-				s.close();
-				int point = raflebæger.getSumterninger();
-				int penge = felt.getPoint(point);
-				konto1.indsætPenge(penge);
-				System.out.println("Du slog " + point);
-				System.out.println("Du har dermed " + konto1.getBalance() + " på kontoen");
-
-			}
-			s = new Scanner(System.in);
-			String input3;
-
-			System.out.print("Det er " + spiller2.getNavn()+ " skriv kast");
-
-			input3 = s.nextLine();
-			//Checker om "exit" er blevet indtastet, hvis sandt, lukkes programmet.
-			if(input3.toLowerCase().contentEquals("kast")) {
-				s.close();
-				int point = raflebæger.getSumterninger();
-				int penge = felt.getPoint(point);
-				konto2.indsætPenge(penge);
-				System.out.println("Du slog " + point);
-				System.out.println("Du har dermed " + konto2.getBalance() + " på kontoen");
+		
+		System.out.print(Tekst.getTekst(2, 0));
+		String input = sc.nextLine();
+		if(input.toLowerCase().equals("exit")) System.exit(0);
+		spillere[0].setNavn(input);
+		
+		System.out.print(Tekst.getTekst(2, 1));
+		input = sc.nextLine();
+		spillere[1].setNavn(input);
+		
+		kontoer[0].setBalance(1000);
+		kontoer[1].setBalance(1000);
+		
+		while(true) {
+			System.out.println("\n"
+					+ "######################################################"
+					+ "\n");
+			System.out.println(Tekst.getTekstMedInput(2, 3, spillere[nr].getNavn()));
+			sc.nextLine();
+			
+			int sum = rafle.getSumterninger();
+			int point = felter.getPoint(sum);
+			System.out.println("@------------------------------------------------@\n"
+					+ Tekst.getTekst(1, sum-2)
+					+ "\n@------------------------------------------------@");
+			
+			if(!kontoer[nr].indsætPenge(point)) {
+				System.out.println(Tekst.getTekstMedInput(2, 5, spillere[nr].getNavn()));
 				break;
-
-
 			}
+			else {
+				if(kontoer[nr].getBalance() >= 3000) {
+					System.out.println(Tekst.getTekstMedInput(2, 6, spillere[nr].getNavn()));
+					break;
+				}
+			}
+			
+			System.out.println(Tekst.getTekstMedInput(2, 4, kontoer[nr].getBalance()));
+			
+			if(sum != 10) {
+				if (nr < 1) nr++;
+				else nr = 0;
+			}
+			
 		}
-	}}
-
-
+		
+	}
+}

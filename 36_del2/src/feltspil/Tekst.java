@@ -56,7 +56,7 @@ public class Tekst {
 		String s = getTekst(k,i);
 		
 		if (s.contains("@_")){
-			s.replace("@_", o.toString());
+			s = s.replace("@_", o.toString());
 		}
 		
 		return s;

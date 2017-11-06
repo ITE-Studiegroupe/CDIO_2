@@ -12,7 +12,7 @@
 05 Gud tilgiver dig, du behøver ikke at betale.
 06 Du har tabt mobilen. Brug 70 på at fikse skærmen.
 07 Sov i min hytte og du vil blive betalt 60 for din service.
-08 Du er blevet voldtaget og forulempet, du mister 80.
+08 Du er blevet voldtaget og forulempet, du mister 80. Som trøst får du en ekstra tur <3
 09 Du fik en plads i pitten. Dette koster 50.
 10 Du har fundet guld i bjergene og sælger det for 650, du er rig!
 
@@ -20,5 +20,7 @@
 00 Indtast spiller 1's navn eller "exit" for at lukke:
 01 Indtast spiller 2's navn: 
 02 Du slog 
-03 Det er @_'s tur, skriv "kast" for at kaste.
+03 Det er @_'s tur, tryk "Enter" for at kaste.
 04 Du har dermed @_ på kontoen. 
+05 @_, du har tabt! TABER!
+06 @_, du har vundet!
