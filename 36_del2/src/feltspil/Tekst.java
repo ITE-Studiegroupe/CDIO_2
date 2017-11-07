@@ -1,6 +1,7 @@
 package feltspil;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.Scanner;
 
 /**
@@ -16,20 +17,19 @@ public class Tekst {
 	
 	/**
 	 * Indlæser sprogfil i forhold til det givne String input, 
-	 * hvis input'et ikke matcher nogle kompatible sprog, sættes dette til dansk.<br>
+	 * hvis input'et ikke matcher nogle kompatible sprog kommer der fejl.<br>
 	 * Tilgængelige sprog: DA (dansk) og EN (engelsk).
 	 * @param input ISO 639-1 sprog koder
 	 * @throws FileNotFoundException hvis filen/sproget ikke findes
 	 */
 	public static void indlæsSprog(String input) throws FileNotFoundException {
-		String sti = "src/sprog/"+input;
-		File fil = new File(sti);
+		InputStream stream = Tekst.class.getClass().getResourceAsStream("/sprog/"+input);
 		
-		if (fil.exists()) {
-			læsTekst(fil);
+		if(stream != null) {
+			læsTekst(stream);
 		}
 		else throw new FileNotFoundException("Det givne sprog: \""+input+"\" eller tilhørende fil findes ikke");
-	
+
 	}
 	
 	/**
@@ -70,9 +70,8 @@ public class Tekst {
 	 * - StrengArray tekstFelter<br>
 	 * - StrengArray tekstBeskeder
 	 * @param f Filen som skal læses
-	 * @throws FileNotFoundException 
 	 */
-	private static void læsTekst(File f) throws FileNotFoundException {
+	private static void læsTekst(InputStream f) {
 		Scanner sc;
 		int i = -1;
 		sc = new Scanner(f);
