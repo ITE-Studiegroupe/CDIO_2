@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 /**
- * Klassen: Tekst<br>
+ * Klassen: Tekst
  * @author gruppe 36
  *
  */
@@ -19,7 +19,7 @@ public class Tekst {
 	 * hvis input'et ikke matcher nogle kompatible sprog, sættes dette til dansk.<br>
 	 * Tilgængelige sprog: DA (dansk) og EN (engelsk).
 	 * @param input ISO 639-1 sprog koder
-	 * @throws FileNotFoundException 
+	 * @throws FileNotFoundException hvis filen/sproget ikke findes
 	 */
 	public static void indlæsSprog(String input) throws FileNotFoundException {
 		String sti = "src/sprog/"+input;
@@ -37,6 +37,7 @@ public class Tekst {
 	 * @param k tekst kategori
 	 * @param i tekst indeks
 	 * @return String med den valgte tekst.
+	 * @throws ArrayIndexOutOfBoundsException hvis indekset "k" er uden for grænserne.
 	 */
 	public static String getTekst(int k, int i) throws ArrayIndexOutOfBoundsException {
 		if (k>=tekstArray.length||k<0) throw new ArrayIndexOutOfBoundsException(
