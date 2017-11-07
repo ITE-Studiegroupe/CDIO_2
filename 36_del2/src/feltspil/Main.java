@@ -111,7 +111,7 @@ public class Main {
 			
 			/**
 			 * if-statement der sørger for at man får en ekstra tur når man får summen
-			 * af øjne svarenden til 10
+			 * af øjne svarenden til 10.
 			 */
 
 			if (sum != 10) {
