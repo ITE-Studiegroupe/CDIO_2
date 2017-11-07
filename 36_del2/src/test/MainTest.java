@@ -19,7 +19,7 @@ public class MainTest {
 	}
 
 	@Test
-	public void test1000() {
+	public void test1001() {
 		Konto konto = new Konto();
 		konto.setBalance(1000);
 		int tal = 0;
@@ -34,6 +34,46 @@ public class MainTest {
 		}
 		int actual = antalAfvist;
 		int expected = 1000;
+	System.out.println(konto.getBalance());
+	assertEquals(expected,actual);
+		}
+	
+	@Test
+	public void test1000() {
+		Konto konto = new Konto();
+		konto.setBalance(1000);
+		int tal = 0;
+		int antalAfvist = 0;
+		while(tal < 1000) {
+			boolean indsæt = konto.indsætPenge(-1000);
+			if(!indsæt) {
+				antalAfvist++;
+				tal++;
+			}
+			else {tal++;}
+		}
+		int actual = antalAfvist;
+		int expected = 999;
+	System.out.println(konto.getBalance());
+	assertEquals(expected,actual);
+		}
+	
+	@Test
+	public void test100() {
+		Konto konto = new Konto();
+		konto.setBalance(1000);
+		int tal = 0;
+		int antalAfvist = 0;
+		while(tal < 1000) {
+			boolean indsæt = konto.indsætPenge(-100);
+			if(!indsæt) {
+				antalAfvist++;
+				tal++;
+			}
+			else {tal++;}
+		}
+		int actual = antalAfvist;
+		int expected = 990;
 	System.out.println(konto.getBalance());
 	assertEquals(expected,actual);
 		}
