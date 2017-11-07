@@ -1,9 +1,9 @@
-@@ KnapTekst
+@@_0_KnapTekst
 00 Spil
 01 Kast
 02 Luk
 
-@@ FeltTekst
+@@_1_FeltTekst
 00 Du har fundet tårnet i Slagelse, og sælger 1g. kokain for 250. Du er lidt rigere nu!
 01 Du har ødlagt dine sneaks og bliver nød til at købe nye for 100.
 02 Du er kunde nummer 100. Derfor får du 100.
@@ -16,11 +16,11 @@
 09 Du fik en plads i pitten. Dette koster 50.
 10 Du har fundet guld i bjergene og sælger det for 650, du er rig!
 
-@@ BeskedTekst
+@@_2_BeskedTekst
 00 Indtast spiller 1's navn eller "exit" for at lukke:
 01 Indtast spiller 2's navn: 
 02 Du slog 
-03 Det er @_'s tur, tryk "Enter" for at kaste.
+03 Det er @_s tur, tryk "Enter" for at kaste.
 04 Du har dermed @_ på kontoen. 
 05 @_, du har tabt! TABER!
 06 @_, du har vundet!

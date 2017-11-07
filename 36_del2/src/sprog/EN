@@ -1,9 +1,10 @@
-@@ ButtonText
+//OBS Kun et eksempel
+@@_0_ButtonText
 00 Play
 01 Roll
 02 Close
 
-@@ FieldText
+@@_1_FieldText
 00 You've found the tower in Slagelse and sell 1g. cocaine for 250. You are now a tad richer!
 01 You've broken your sneaks. You buy new ones for 100.
 02 You're customer number 100! You're given 100.
@@ -12,12 +13,15 @@
 05 God forgives you, no need to expiate.
 06 You've dropped your phone. You spend 70 to repair the screen.
 07 Sleep in my hut and you shall be rewarded 60 for your services.
-08 You've been raped and molested, you loose 80.
+08 You've been raped and molested, you loose 80. As compensation, you get an extra turn.
 09 You've got at space in the pit. You pay 50 for it.
 10 You've found gold in the mountains og sell it for 650, you are rich!
 
-@@ BeskedTekst
-01 No idea
-02 on what
-03 I should
-04 write here
+@@_2_MessageTekst
+00 Input player 1's name or "exit" to exit:
+01 Input player 2's name:
+02 You rolled 
+03 It @_'s turn, press "Enter" to roll.
+04 You now have @_ on your account.
+05 @_, you lost! LOOSER!
+06 @_, you've won!
