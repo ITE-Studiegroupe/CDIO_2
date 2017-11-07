@@ -1,8 +1,14 @@
 package feltspil;
 
+/**
+ * 
+ * Kallsen Spiller
+ * @author gruppe 36
+ * 
+ */
 public class Spiller {
 	
-	/* Denne klasse har til formål at give muligheden for at spillerne får et navn
+	/** Denne klasse har til formål at give muligheden for at spillerne får et navn
 	 * og et nr, så man kan holde styr på hvem der er spiller 1 og spiller 2.
 	 */
 	
@@ -10,19 +16,19 @@ public class Spiller {
 	private String spillernavn;
 	private int spillernr;
 
-	 //set navn
+	 //Sætter spillerens navn
 	 public void setNavn(String navn_spiller) {
 		 spillernavn = navn_spiller;
 	}
-	 //get navn
+	 //Returnerer spillerens navn
 	 public String getNavn() {
 		 return spillernavn;
 	}
-	 //set nr
+	 //Sætter spillerens nummer
 	 public void setNummer(int nr_spiller) {
 		 spillernr = nr_spiller;
 	 }
-	 //get nr
+	 //Returner spillerens nummer
 	 public int getNummer() {
 		 return spillernr;
 	 }

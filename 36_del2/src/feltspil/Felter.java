@@ -1,8 +1,18 @@
 package feltspil;
 
 
+/**
+ * 
+ * Klassen Felter
+ * @author gruppe 36
+ * 
+ */
 public class Felter {
 
+	/**
+	 *nr henviser til case, den case der matcher med spillerens terningekast værdi, vil blive udført
+	 *klassen Felter, retunerer point, disse point skal korrigeres med spillerens pengebeholdning
+	 */
 	public int getPoint(int nr) {
 	 	int point;	
 	 	switch(nr) {

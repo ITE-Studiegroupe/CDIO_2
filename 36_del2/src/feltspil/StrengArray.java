@@ -4,7 +4,6 @@ import java.util.Arrays;
 /**
  * Klassen: StrengArray
  * @author gruppe 36
- *
  */
 public class StrengArray {
 	
