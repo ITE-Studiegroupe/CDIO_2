@@ -110,7 +110,7 @@ public class Main {
 			System.out.println(Tekst.getTekstMedInput(2, 4, kontoer[nr].getBalance()));
 			
 			/**
-			 * if-statement der sørger for at man får en ekstra tur når man får summen
+			 * if-statement der sørger for at respektiv spiller får en ekstra tur når man får summen
 			 * af øjne svarenden til 10.
 			 */
 
