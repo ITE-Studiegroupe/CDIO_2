@@ -48,19 +48,4 @@ public class StrengArray {
 		return this;
 	}
 	
-// Bruges ikke længere så ugyldigt nu	
-//	public boolean indeholder(String element) {
-//		for (int i = 0; i < array.length; i++) {
-//			if (array[i].equals(element)) return true;
-//		}
-//		return false;
-//	}
-//	
-//	public int indeksAf(String element) {
-//		for (int i = 0; i < array.length; i++) {
-//			if (array[i].equals(element)) return i;
-//		}
-//		return 0;
-//	}
-
 }
