@@ -10,6 +10,13 @@ import java.util.Arrays;
  */
 public class StrengArray {
 	
+<<<<<<< HEAD
+=======
+	/**
+	 * Klassen har til formål at styrer arrays. Disse bruges til at holde på teksten.
+	 */
+	
+>>>>>>> refs/remotes/origin/master
 	private String[] array;	
 	
 	/**
