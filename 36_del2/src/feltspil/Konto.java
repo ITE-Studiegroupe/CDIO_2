@@ -1,7 +1,7 @@
 package feltspil;
 
 /**
- * Klassen Konto
+ * Klassen: Konto
  * @author gruppe: 36
  */
 

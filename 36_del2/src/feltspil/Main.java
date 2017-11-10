@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 /**
- * Klassen Main.
+ * Klassen: Main.
  * @author Gruppe_36.
  */
 

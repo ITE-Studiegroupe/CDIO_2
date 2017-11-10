@@ -2,7 +2,7 @@ package feltspil;
 
 /**
  * Klassen: Raflebæger
- * @author gruppe 36
+ * @author gruppe: 36
  *
  */
 public class Raflebæger {

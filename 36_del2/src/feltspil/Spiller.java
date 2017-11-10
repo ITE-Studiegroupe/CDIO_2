@@ -1,11 +1,8 @@
 package feltspil;
 
 /**
- * 
- * Kallsen Spiller
- * 
- * @author gruppe 36
- * 
+ * Kallsen: Spiller
+ *  * @author gruppe: 36
  */
 public class Spiller {
 

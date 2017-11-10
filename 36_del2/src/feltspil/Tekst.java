@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 /**
  * Klassen: Tekst
- * @author gruppe 36
+ * @author gruppe: 36
  *
  */
 public class Tekst {
