@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 /**
  * Klassen: Tekst
+ * Klassen har til formål at holde styr på tekstfilerne fra sprogpakken.
  * @author gruppe: 36
- *
  */
 public class Tekst {
 	private static StrengArray tekstFelter = new StrengArray();
