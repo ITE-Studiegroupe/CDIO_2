@@ -4,7 +4,7 @@ package feltspil;
  * Klassen: Terning<br>
  * @author gruppe: 36
  */
-
+//Genbrugt og ændret fra vores CDIO Del1 projekt (36_del1).
 public class Terning {
 	
 	/**
