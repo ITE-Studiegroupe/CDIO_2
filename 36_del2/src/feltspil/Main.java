@@ -126,6 +126,7 @@ public class Main {
 			}
 
 		}
+		sc.nextLine();
 		sc.close();
 	}
 
