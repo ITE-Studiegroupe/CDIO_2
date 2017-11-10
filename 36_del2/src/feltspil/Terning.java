@@ -10,6 +10,7 @@ package feltspil;
 public class Terning {
 
 	private int terning;
+	private int antalSider = 6;
 
 	/**
 	 * Giver den private int "terning" attribut en tilfældig værdi mellem 1 og 6 inklusiv.<br> 
@@ -17,7 +18,7 @@ public class Terning {
 	 */
 	private void Kast() {
 		int terning;
-		terning = ((int) (Math.random()*6)+1);
+		terning = ((int) (Math.random()*antalSider)+1);
 		this.terning = terning;
 	}
 
