@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class StrengArray {
 	
 	/**
-	 * Klassen har til formål at styrer arrays.
+	 * Klassen har til formål at styrer arrays. Disse bruges til at holde på teksten.
 	 */
 	
 	private String[] array;	
