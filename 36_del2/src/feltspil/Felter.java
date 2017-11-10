@@ -1,12 +1,10 @@
 package feltspil;
 
-
 /**
- * 
  * Klassen: Felter
  * @author gruppe: 36
- * 
  */
+
 public class Felter {
 
 	/**

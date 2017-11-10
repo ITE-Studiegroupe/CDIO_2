@@ -2,12 +2,15 @@ package feltspil;
 
 /**
  * Klassen: Terning<br>
- * Denne klasse har til formål at lave et terning-kast, der som en terning 
- * en terning i virkeligheden giver en tilfældig værdi mellem 1-6
  * @author gruppe: 36
- *
  */
+
 public class Terning {
+	
+	/**
+	 * Denne klasse har til formål at lave et terning-kast, der som en terning
+	 * en terning i virkeligheden giver en tilfældig værdi mellem 1-6
+	 */
 
 	private int terning;
 	private int antalSider = 6;

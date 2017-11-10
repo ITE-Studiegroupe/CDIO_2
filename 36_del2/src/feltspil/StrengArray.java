@@ -7,11 +7,16 @@ import java.util.Arrays;
  */
 public class StrengArray {
 	
+	/**
+	 * Klassen har til formål at styrer arrays.
+	 */
+	
 	private String[] array;	
 	
 	/**
 	 * StrengArray konstruktør, initialiserer String Array "array" med et tomt String Array.
 	 */
+	
 	public StrengArray() {
 		array = new String[0];
 	}
