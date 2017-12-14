@@ -2,7 +2,10 @@ package feltspil;
 import java.util.Arrays;
 
 /**
- * Klassen: StrengArray
+ * Klassen: StrengArray<br>
+ * Klassen har til formål at holde på en String Array og kunne håndtere fleksibilitet ved at kunne 
+ * tilføje en String til for at udvide det via metoden {@link #tilføj(String) tilføj}. Den kan 
+ * også returnere en String via indeks i array'et med metoden {@link #getFraIndeks(int) getFraIndeks}.
  * @author gruppe: 36
  */
 public class StrengArray {
@@ -12,6 +15,7 @@ public class StrengArray {
 	/**
 	 * StrengArray konstruktør, initialiserer String Array "array" med et tomt String Array.
 	 */
+	
 	public StrengArray() {
 		array = new String[0];
 	}

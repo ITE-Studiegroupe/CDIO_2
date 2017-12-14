@@ -9,6 +9,10 @@ import java.util.Scanner;
  */
 
 public class Main {
+	
+	/**
+	 * Klassen sørger for at spillet kan køres.
+	 */
 
 	public static void main(String[] args) {
 
@@ -122,6 +126,7 @@ public class Main {
 			}
 
 		}
+		sc.nextLine();
 		sc.close();
 	}
 
