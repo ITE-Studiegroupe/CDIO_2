@@ -5,14 +5,11 @@ import java.io.InputStream;
 import java.util.Scanner;
 
 /**
- * Klassen: Tekst<br>
- * Klassen har til formål at indlæse det valgte sprog, hvis filen findes i pakken, i nogle String arrays
- * som man så kan hente teksten fra via metoden {@link #getTekst(int, int) getTekst} eller hente 
- * tilpasset tekst med input via metoden {@link #getTekstMedInput(int, int, Object) getTekstMedInput}.
+ * Klassen: Tekst
+ * Klassen har til formål at holde styr på tekstfilerne fra sprogpakken.
  * @author gruppe: 36
  */
 public class Tekst {
-	
 	private static StrengArray tekstFelter = new StrengArray();
 	private static StrengArray tekstKnapper = new StrengArray();
 	private static StrengArray tekstBeskeder = new StrengArray();

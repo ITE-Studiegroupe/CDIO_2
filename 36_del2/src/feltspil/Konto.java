@@ -6,10 +6,6 @@ package feltspil;
  */
 
 public class Konto {
-	
-	/**
-	 * Klassen holder styr på de respektive spilleres kontier og balance på dem.
-	 */
 	private int balance;
 	
 	/**

@@ -1,13 +1,13 @@
 package feltspil;
 
 /**
- * Klassen: Spiller
- * @author gruppe: 36
+ * Kallsen: Spiller
+ *  * @author gruppe: 36
  */
 public class Spiller {
 
 	/**
-	 * Klassen har til formål at give muligheden for at spillerne får et navn
+	 * Denne klasse har til formål at give muligheden for at spillerne får et navn
 	 * og et nr, så man kan holde styr på hvem der er spiller 1 og spiller 2.
 	 */
 
